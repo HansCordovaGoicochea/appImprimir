@@ -97,7 +97,7 @@ class imprimircontrolador extends CI_Controller {
                     productos
                 */
                 $productos = array();
-                $productos[] = new Producto( 'CANT','PROD.',   'SUBTO');
+                $productos[] = new Producto( 'CANT','DESCRIPCION',   'IMPOR');
 
                 $objDetalle = json_decode(($this->input->post('jsonDetalle')));
                 $arrayobjetos = $objDetalle->valor;
@@ -123,9 +123,9 @@ class imprimircontrolador extends CI_Controller {
                 $printer->text("----------------------------------------");
                 $printer -> setJustification(Printer::JUSTIFY_RIGHT);
                 $printer -> setEmphasis(true);
-                $printer->text("              SUBTOTAL  : " . $subtotal . " \n");
-                $printer->text("                   IGV  : " . $impuesto . " \n");
-                $printer->text("                 TOTAL  : " . $total . " \n");
+                $printer->text("            SUBTOTAL  : " . $subtotal . " \n");
+                $printer->text("                 IGV  : " . $impuesto . " \n");
+                $printer->text("               TOTAL  : " . $total . " \n");
                 $printer->text("----------------------------------------");
                 $printer->text("". date("Y-m-d H:i:s") . "\n");
                 $printer -> feed();
