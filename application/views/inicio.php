@@ -170,10 +170,10 @@
                     >
                         <i class="fa fa-print" style="display: block; margin: 0 auto; font-size: 28px; background: transparent; background-size: 26px; background-position: center;"></i>Imprimir Ticket
                     </button>
-                    <button type="button" class="btn btn-default pull-right" id="imprimir_pdf" onclick="imprimir_ticket('nodirecto');" style="margin-top: 20px;"         data-value="nodirecto"
-                    >
-                        <i class="fa fa-print" style="display: block; margin: 0 auto; font-size: 28px; background: transparent; background-size: 26px; background-position: center;"></i>Abrir PDF
-                    </button>
+<!--                    <button type="button" class="btn btn-default pull-right" id="imprimir_pdf" onclick="imprimir_ticket('nodirecto');" style="margin-top: 20px;"         data-value="nodirecto"-->
+<!--                    >-->
+<!--                        <i class="fa fa-print" style="display: block; margin: 0 auto; font-size: 28px; background: transparent; background-size: 26px; background-position: center;"></i>Abrir PDF-->
+<!--                    </button>-->
                 </div>
         </div>
     </div>
