@@ -150,7 +150,8 @@ else{
                 $(this).button('reset');
                 $.ajaxunblock();
             });
-        }else{
+        }
+        else{
             $('#modal_reporte_tareo').modal('show');
             url = base_url + "index.php/imprimircontrolador/imprimirAbrir";
             $('#contenido_modal_reporte').html('<embed style="height: 500px;" id="objeto_reporte_m" width="100%" class="contenido-pdf" src="' + url + '">');

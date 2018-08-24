@@ -159,7 +159,6 @@ class imprimircontrolador extends CI_Controller {
     }
     public function imprimirAbrir() {
 
-
             $data = array(
 
             );
@@ -168,25 +167,26 @@ class imprimircontrolador extends CI_Controller {
             $this->load->library('pdf');
             $pdf = $this->pdf->load();
 
-            $pdf->SetProtection(array('copy','print'), '', 'cesar',128);
 
             $pdf->AddPage('P',// L - landscape, P - portrait
                 '', '', '', '',
-                '', // margin_left
-                '',// margin right
-                '',// margin top
-                '',// margin bottom
-                '',// margin header
+                '4', // margin_left
+                '4',// margin right
+                '1',// margin top
+                '1',// margin bottom
+                '1',// margin header
                 0);// margin footer
 
+            $pdf->WriteHTML('<pagebreak sheet-size="80mm 297mm" />');
             $pdf->WriteHTML($html);
+            $pdf->WriteHTML('<tocentry content="80mm square" />');
             //this the the PDF filename that user will get to download
             $pdfFilePath = "TICKET.pdf";
-            //download it.
-//            $pdf->Output($pdfFilePath, "D");
-            $pdf->Output($pdfFilePath,'I');
+//            //download it.
+////            $pdf->Output($pdfFilePath, "D");
+            $pdf->Output();
 
-            echo json_encode(array('estado' => true, 'archivo' =>$pdfFilePath));
+//            echo json_encode(array('estado' => true, 'archivo' =>$pdfFilePath));
     }
 }
 

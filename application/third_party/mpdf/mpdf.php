@@ -15,7 +15,7 @@
 
 define('mPDF_VERSION','6.0');
 
-//Scale factorOutput
+//Scale factor
 define('_MPDFK', (72/25.4));
 
 

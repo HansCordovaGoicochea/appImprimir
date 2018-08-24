@@ -18,7 +18,7 @@
                                 </div>
                                 <div class="col-lg-6 col-xs-12">
                                     <div class="form-group">
-                                        <label>Ruc Emisora</label>
+                                        <label>Ruc Emisor</label>
                                         <input type="text" class="form-control" name="txtRucEmisor" id="txtRucEmisor" placeholder="Ingrese el RUC ...">
                                     </div>
                                 </div>
@@ -30,13 +30,14 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-xs-12">
-                                <div class="form-group">
-                                    <label>Nro Recibo</label>
-                                    <input type="text" class="form-control" name="txtRecibo" id="txtRecibo" placeholder="Ingrese Número Recibo ...">
-                                </div>
+
                                 <div class="form-group">
                                     <label>CLIENTE</label>
                                     <input type="text" class="form-control" name="txtCliente" id="txtCliente" placeholder="Ingrese el cliente ...">
+                                </div>
+                                <div class="form-group">
+                                    <label>DIRECCIÓN</label>
+                                    <input type="text" class="form-control" name="txtDireccion" id="txtDireccion" placeholder="Ingrese la dirección ...">
                                 </div>
                                 <div class="form-group">
                                     <div class="col-lg-5 col-xs-12">
@@ -56,9 +57,10 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-xs-12">
+
                                 <div class="form-group">
-                                    <label>DIRECCIÓN</label>
-                                    <input type="text" class="form-control" name="txtDireccion" id="txtDireccion" placeholder="Ingrese la dirección ...">
+                                    <label>Nro Recibo</label>
+                                    <input type="text" class="form-control" name="txtRecibo" id="txtRecibo" placeholder="Ingrese Número Recibo ...">
                                 </div>
                                 <div class="form-group">
                                     <label>OBS</label>
@@ -166,14 +168,14 @@
                     </div>
                 </form>
                 <div class="panel-footer">
-                    <button type="button" class="btn btn-default pull-right" id="imprimir_ticket" onclick="imprimir_ticket('directo');" style="    margin-top: 20px;"         data-value="directo"
+                    <button type="button" class="btn btn-primary pull-right" id="imprimir_ticket" onclick="imprimir_ticket('directo');" style="    margin-top: 20px;"         data-value="directo"
                     >
                         <i class="fa fa-print" style="display: block; margin: 0 auto; font-size: 28px; background: transparent; background-size: 26px; background-position: center;"></i>Imprimir Ticket
                     </button>
-<!--                    <button type="button" class="btn btn-default pull-right" id="imprimir_pdf" onclick="imprimir_ticket('nodirecto');" style="margin-top: 20px;"         data-value="nodirecto"-->
-<!--                    >-->
-<!--                        <i class="fa fa-print" style="display: block; margin: 0 auto; font-size: 28px; background: transparent; background-size: 26px; background-position: center;"></i>Abrir PDF-->
-<!--                    </button>-->
+                    <button type="button" class="btn btn-default pull-right" id="imprimir_pdf" onclick="imprimir_ticket('nodirecto');" style="margin-top: 20px;"         data-value="nodirecto"
+                    >
+                        <i class="fa fa-print" style="display: block; margin: 0 auto; font-size: 28px; background: transparent; background-size: 26px; background-position: center;"></i>Abrir PDF
+                    </button>
                 </div>
         </div>
     </div>

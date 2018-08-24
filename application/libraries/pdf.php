@@ -14,7 +14,7 @@ class pdf {
 
         if ($params == NULL)
         {
-            $param = '"en-GB-x","A4","","",10,10,10,10,6,3';
+            $param = '"en-GB-x","A4","","",1,1,1,1,1,1';
         }
 
         return new mPDF($param);
